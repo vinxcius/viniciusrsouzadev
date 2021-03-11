@@ -1,0 +1,15 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $body-background;
+    color: $color-primary;
+    overflow-x: visible;
+    scroll-behavior: smooth;
+}
+

@@ -1,0 +1,71 @@
+@mixin links{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+}
+
+@mixin after{
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    bottom:0;
+    left: 0;
+    transition: width 0.8s ease;
+    border: 1px solid transparent;
+}
+
+@mixin before{
+    content:'';
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    top:0;
+    right: 0;
+}
+
+
+@mixin flexbox-props{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin grid-props{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr); //3 colunas, 1fr de tamanho
+    align-items: center;
+    text-align: center;
+}
+
+@mixin breakpoint-grid-props{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr); //3 colunas, 1fr de tamanho
+    align-items: center;
+    text-align: center;
+}
+@mixin icons{
+    text-align: center;
+    i {    
+        
+        text-shadow:0px 7px 10px rgb(7, 6, 6);  font-size: 4rem;
+        color: white;
+        transition: 0.4s;
+        &:hover{
+            transform: scale(1.1);
+            text-shadow:0px 8px 13px rgb(6, 0, 0);
+        }
+    } 
+    padding: 20px;
+}
+
+@mixin focus($color, $background-color){
+    &::selection{
+        color: $color;
+        background: $background-color;
+        
+    }
+}
+

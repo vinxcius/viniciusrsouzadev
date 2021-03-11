@@ -1,0 +1,20 @@
+#about-me{
+    background-color: $color-dark;
+    .container{
+        width: 80%;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+    
+    .section-text{
+        width: 100%
+    }
+}
+
+.section-icon{
+    @include icons;
+    
+}
+

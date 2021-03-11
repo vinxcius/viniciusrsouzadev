@@ -1,0 +1,61 @@
+#history{
+    background-color: $dark-blue-color;
+    text-align: left;
+    
+    .container2{
+        margin-top: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .section-text{
+        max-width: 700px;
+    }
+    .img{
+        
+        transition: 0.2s ease-in;
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{            
+            max-width: 330px;
+            margin: 0px auto;
+            filter: drop-shadow(0px 15px 10px black);
+        }
+    }
+
+    .curved {
+        svg{
+            background-color: #1C1A26;
+            width: 100%;
+            display: block;
+        }
+    }
+    
+}
+
+@media screen and (max-width:538px){
+    
+    .section-title{
+        h4{
+            font-size: 2rem;
+
+        }
+    }
+
+    .intro-text{
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .img{
+        img{
+            width: 200px;
+        }
+    }
+}
+

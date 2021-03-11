@@ -1,0 +1,21 @@
+
+.nav-links{
+    display: flex;
+    width: 45%; //aumenta o espaço permitindo dar space-around
+    justify-content: space-around;
+    
+}
+
+.burger {
+    display: none;
+    div{
+        width: 25px;
+        height: 3px;
+        background-color: $color-primary;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+  
+}
+
+

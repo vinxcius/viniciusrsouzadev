@@ -1,0 +1,256 @@
+//Nav Start
+
+nav{
+    
+    .logo{
+        margin: 10px;
+        a{
+            @include links;
+            letter-spacing: 3px;
+            font-size:1.5rem;
+            text-shadow: 0px 10px 15px rgba($color-dark, 0.685);
+            position: relative;
+
+            @include focus(darken($color-primary,15%),darken($color-dark, 0.685));
+            &:hover{
+                &::after{
+                    width: 100%;
+                    border: 1px solid white;
+                }
+            }
+
+            &::after{
+                @include after;
+            }      
+        }     
+    }
+    
+    li{
+        list-style-type: none;
+        padding: 5px;
+        text-align: center;
+        transition: all 0.5s ease;
+        position: relative;
+        
+        a{
+            @include links;
+            text-shadow:0px 5px 10px rgba($color-dark, 0.685);
+            padding: 6px;
+            width: 100%;
+            display: inline-block;
+            @include focus(darken($color-primary,15%),darken($color-dark, 0.685));
+            transition: 0.4s all;
+
+            &::before{
+                @include before;     
+                border: 1px solid transparent;      
+                transition: all 0.4s;
+            }
+    
+            &::after{
+                @include after;
+                border: 1px solid transparent;
+                transition: all 0.4s;
+            }
+    
+            &:hover{
+                border: none;
+                transform: scale(1.05);
+                background-color: darken($body-background, 6%);
+                &:before{
+                    height: 105%;
+                    width: 105%;
+                    border-color: $color-primary
+                    $color-primary transparent transparent;
+                   
+                }
+    
+                &:after{
+                    height: 105%;
+                    width: 105%;
+                    border-color: transparent  transparent $color-primary
+                    $color-primary;
+                }
+            }
+        }     
+    }
+    .hamburger div{     
+            background-color: white;
+            height: 3px;
+            margin: 6px;
+            width: 25px;
+    }
+ 
+}
+
+// Intro Start
+
+#intro span{
+    @extend %span-props;
+
+    
+    &::after{
+        @include after;
+       }
+
+    &:hover{
+        color:$color-primary;
+
+        &::after{
+            height: 3%;
+            width: 100%;
+            background-color: tomato;
+        }
+    }
+
+}
+
+.intro-title{
+    padding: 15px;
+
+    h1{
+        font-size: 3.5rem;  
+      
+    }    
+}
+
+.intro-text{
+    padding: 15px;
+    p{  
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+//Intro End
+
+//Skills Start
+#skills{
+    h3{
+        margin-bottom: 20px;
+        margin-left: 25%;
+        padding: 15px 0px 0px 0px;
+
+    }
+}
+//Skills End
+
+//History Start
+
+#history{
+    .ul-box{
+   
+        ul{
+            border-left: 4px solid gold;
+            margin: 10px;
+            list-style-type: none;
+            li{
+
+                margin: 10px 0px 30px 10px;
+                text-indent: -4px;
+
+                
+                span{
+                    @extend %span-props;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+            
+            li.completed{
+                background-image: url('../../img/complete-icon.png');
+                background-repeat: no-repeat;
+                background-position: 0px 50%;
+                background-size: 20px;
+                padding-left: 40px;
+            }
+            
+            li.in-progress{
+                background-image: url('../../img/loading-icon.png');
+                background-repeat: no-repeat;
+                background-position: -10px 40%;
+                background-size: 40px;
+                padding-left: 40px;
+            }
+        }
+    }
+    p{
+        margin: 25px;
+        text-align: left;
+    }    
+}
+
+
+//History End
+
+
+//Portfolio Start
+
+#portfolio{
+    text-align: center;
+
+    .project-title{
+  
+        margin: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $color-primary;
+    }
+}
+
+//Portfolio End
+
+
+
+//Default Start
+
+.section-text, .project-text{
+    p{  
+        padding: 20px;
+        font-size: 1.2rem;
+
+        text-align: center;
+    }
+}
+
+.section-title{
+    padding: 5px;
+    position: relative;
+    
+    h4{
+
+        margin: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            width: 15px;
+            height: 4px;
+            border-radius: 2px 0 0 2px;
+            background-color: teal;
+            transition: .4s ease;
+            
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 15px;
+            height: 4px;
+            border-radius: 0 2px 2px 0px;
+            background-color: teal;
+            transition: .4s ease;
+        }
+     
+    }
+}
+//Default End

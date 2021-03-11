@@ -1,0 +1,73 @@
+#intro{
+    height: 100vh;
+    width: 100%;
+
+    @include flexbox-props;
+    text-align: left;
+    background-image: linear-gradient(to right bottom,  
+        rgba($shadow-color, 0.8), 
+        rgba($secondary-shadow-color, 0.8)) 
+        , url(../img/bg-intro.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.8);
+
+
+    .intro-container{
+        @include flexbox-props;
+        flex-direction: column;
+    }
+
+    .btn{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .intro-title{
+        h1{
+            font-size: 2.8rem;
+        }
+    }
+
+    .intro-text{
+        p{
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:800px){
+    
+    .intro-title{
+        h1{
+            font-size: 1.9rem;
+
+        }
+    }
+
+    .intro-text{
+        p{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width:538px){
+    
+    .intro-title{
+        h1{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+
+    .intro-text{
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+

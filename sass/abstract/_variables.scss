@@ -1,0 +1,27 @@
+$color-primary: #e0dcdc;
+$color-dark: rgb(51, 48, 48);
+
+$body-background: #494949;
+$skills-background:#dfdbd7;
+$layout-color: hsl(7, 41%, 40%);
+$shadow-color: #000000;
+$secondary-shadow-color: #BF3706;
+
+$dark-blue-color: #1C1A26;
+$orange-color: #f74e30;
+
+$form-color: #c5ecfd;
+/* Colors Variables End*/
+$breakpoints: (
+    'small': (min-width: 400px),
+    'medium': (min-width: 768px),
+    'large': (min-width: 1024px),
+    'huge': (min-width: 1200px),
+);
+
+%span-props{
+    color: #f74e30;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    position: relative;
+}

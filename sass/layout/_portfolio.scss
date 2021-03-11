@@ -1,0 +1,94 @@
+#portfolio{
+    background-color: darken($color-primary, 10%);
+    padding: 15px;
+    .section-title, .section-text{
+        color: rgb(0,0,0);
+    }
+
+    i{
+        color: lighten($color-dark, 3%);
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        max-width: 1300px;
+        .skill-box{
+            display: flex;
+            justify-content: space-around;
+            background-color: $color-dark;
+            box-shadow: 0px 15px 25px rgba(0,0,0,.7);
+            margin: 40px;
+            min-height: 400px;
+            
+            img{
+                width: 500px;
+            }
+
+            transition: all .4s;
+            &:hover{
+                background-color: rgba(29, 79, 112, 0.74);
+            }
+           
+            .desc-box{  
+                @include flexbox-props;
+                flex-direction: column;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:925px){
+    #portfolio{
+        .container{
+      
+            .project-title{
+                font-size: 1.6rem;
+            }
+            .project-text p{
+                font-size: 1rem;
+            }
+
+            .btn a{
+                padding: 10px;
+                font-size: 15px;
+            }
+            .skill-box{
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width:768px){
+    #portfolio{
+        .container{
+            @include flexbox-props;
+            flex-direction: column;
+            .project-title{
+                font-size: 1.2rem;
+            }
+            .project-text p{
+                font-size: 1rem;
+            }
+
+            .btn a{
+                padding: 10px;
+                font-size: 15px;
+            }
+            .skill-box{
+                flex-direction: column;
+                width: 80%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+[33mcommit 4742f5be2d75956d559a8c72b7c52cafc35c2583[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Wed Mar 10 22:23:58 2021 -0300
+
+    teste
+
+[33mcommit e41c10d61741c926315c49cd8e67fb4ad2ab275f[m
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Tue Mar 9 17:05:47 2021 -0300
+
+    Inserção dos Portfolios
+
+[33mcommit 77fab1ed8325cb732433d868e99d4da146013304[m
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Tue Mar 9 16:17:59 2021 -0300
+
+    correção da transição dos links
+
+[33mcommit ea038b2e46978b946c57e7188309c7fbd27421be[m
+Merge: 59f68c7 ba43d21
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Tue Mar 9 16:04:15 2021 -0300
+
+    Merge branch 'master' of https://github.com/vinxcius/myportfolio
+
+[33mcommit 59f68c75c1033c7dcd089af971332b0ca18af4f7[m
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Tue Mar 9 16:04:09 2021 -0300
+
+    links corrigidos
+
+[33mcommit ba43d2134cec7d262c21e5ed7fd2eb376fec9691[m
+Author: Vinicius Rodrigues <50059630+vinxcius@users.noreply.github.com>
+Date:   Tue Mar 9 15:39:42 2021 -0300
+
+    Set theme jekyll-theme-tactile
+
+[33mcommit 50c1ccc1bb964a8af6de4df3f9b11f0f57309c24[m
+Merge: 97143fd 4781116
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Tue Mar 9 15:34:55 2021 -0300
+
+    Merge branch 'master' of https://github.com/vinxcius/myportfolio
+
+[33mcommit 97143fd445f3d2b61dd02bffaf14e118e1e9eccb[m
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Tue Mar 9 15:33:19 2021 -0300
+
+    Correção dos links
+
+[33mcommit 4781116c80bb59409dde1c1d6eac395b6aac8807[m
+Author: Vinicius Rodrigues <50059630+vinxcius@users.noreply.github.com>
+Date:   Tue Mar 9 15:21:41 2021 -0300
+
+    Set theme jekyll-theme-cayman
+
+[33mcommit 0173e1b17f8142f3c7c855ae1e8d40d4677fb70d[m
+Author: Vinicius Rodrigues <50059630+vinxcius@users.noreply.github.com>
+Date:   Tue Mar 9 15:16:08 2021 -0300
+
+    Set theme jekyll-theme-minimal
+
+[33mcommit 1ac6c2b4a5b43a7a243734222324a0a751c8de0f[m
+Author: Vinicius Rodrigues Souza <vinick08@hotmail.com>
+Date:   Tue Mar 9 14:38:42 2021 -0300
+
+    portfolio
